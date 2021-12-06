@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+    rel="stylesheet">
+  <title>Movie reviews</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-container">
+      <div class="logo-container">
+        <h1 class="logo">Movies Web</h1>
+      </div>
+    </div>
+  </div>
+  <h2>What do you want to watch next?</h2>
+  <div class="search-box">
+    <input class="search-txt" id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()" type="search"
+      placeholder="Type to search">
+    <i class="search-btn-icon fas fa-search"></i>
+  </div>
+  <div class="container">
+    <div class="content-container">
+      <div class="Movies"></div>
+    </div>
+  </div>
+  <div class="search-list" id="search-list">
+  </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="result-container">
+      <div class="result-grid" id="result-grid">
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="./script/app.js"></script>
+  <main id="main"></main>
+</body>
+
+</html>
